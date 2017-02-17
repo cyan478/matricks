@@ -2,17 +2,32 @@ import math
 
 
 def print_matrix( matrix ):
-    pass
+	str = ""
+    for r in matrix:
+    	str += "| "
+    	for c in matrix:
+    		str += matrix[r][c] + " " 
+    	str += "|\n"
+    print str
 
 def ident( matrix ):
-    pass
+    for r in matrix.length:
+        for c in matrix[r].length:
+            if r == c:
+                matrix[r][c] = 1
+            else:
+                matrix[r][c] = 0
 
 def scalar_mult( matrix, s ):
-    pass
+    for r in matrix.length:
+        for c in matrix[r].length:
+            matrix[r][c] *= s
 
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
-    pass
+
+
+
 
 
 

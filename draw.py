@@ -12,8 +12,6 @@ def add_point( matrix, x, y, z=0 ):
     pass
 
 
-
-
 def draw_line( x0, y0, x1, y1, screen, color ):
 
     #swap points if going right -> left
