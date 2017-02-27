@@ -3,7 +3,6 @@ from matrix import *
 
 
 def draw_lines( matrix, screen, color ):
-    #plot(screen,color,x,y)
     cols = len(matrix[0])
     for c in range(0,cols,2):
     	draw_line(matrix[0][c], matrix[1][c],
@@ -26,18 +25,7 @@ def add_point( matrix, x, y, z=0 ):
         matrix.append([y])
         matrix.append([z])
         matrix.append([1.0])
-
-'''
-def draw_lines( matrix, screen, color ):
-    pass
-
-def add_edge( matrix, x0, y0, z0, x1, y1, z1 ):
-    pass
-
-def add_point( matrix, x, y, z=0 ):
-    pass
-'''
-
+        
 def draw_line( x0, y0, x1, y1, screen, color ):
 
     #swap points if going right -> left
