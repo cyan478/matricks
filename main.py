@@ -29,16 +29,23 @@ def matrixTest():
 	print "Matrix multiplication"
 	a = [[1,2,3],[4,5,6]]
 	b = [[6,3],[5,6],[1,4]]
-	print "Matrix A"
+	print "Matrix A:"
 	print_matrix(a)
-	print "Matrix B"
+	print "Matrix B:"
 	print_matrix(b)
-	print "Result after multiplying"
+	print "Result after multiplying:"
 	c = matrix_mult(a,b)
 	print_matrix(c)
 	print
 
-	#print "Image Matrix"
+	print "Add Edge [[1,2,3],[4,5,6]] to a matrix"
+	test = new_matrix(0,4)
+	add_edge(test,1,2,3,4,5,6)
+	print_matrix(test)
+
+	print "Multiply above add edge matrix with Scaled identity matrix"
+	prod = matrix_mult(matrix,test)
+	print_matrix(prod)
 
 	a = 50
 	b = 75
@@ -58,6 +65,7 @@ def matrixTest():
 		d += 5
 
 	#print_matrix(matrix)
+	print "Image Matrix"
 	print "the matrix itself is very long so i won't be printing it"
 	print
 

@@ -19,12 +19,12 @@ def add_point( matrix, x, y, z=0 ):
         matrix[0].append(x)
         matrix[1].append(y)
         matrix[2].append(z)
-        matrix[3].append(1.0)
+        matrix[3].append(1)
     else:
         matrix.append([x])
         matrix.append([y])
         matrix.append([z])
-        matrix.append([1.0])
+        matrix.append([1])
         
 def draw_line( x0, y0, x1, y1, screen, color ):
 
